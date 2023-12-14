@@ -17,6 +17,15 @@ Evaluation: Assessing each model's performance using various metrics.
 * Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
 We employed models like Logistic Regression, supplemented by resampling methods to address imbalances in the dataset.
 
+
+In this task, we're creating a system to determine if people borrowing money are likely to pay it back. We'll use various pieces of information like the amount of the loan, the interest rate, the borrower's income, their debt compared to their income, the number of their bank accounts, any past payment issues, and their total debt. Our goal is to predict something called 'value_counts'.
+
+We'll start by loading a file named "lending_data.csv" into a program called Pandas, which helps us manage data. Then, we'll divide this data into two groups: one for training our model and one for testing it.
+
+We'll use a method called Logistic Regression to train our model. This will help us predict the 'value_counts' based on the information we have about the borrowers.
+
+
+
 ## Results
 
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
@@ -52,3 +61,6 @@ Summarize the results of the machine learning models, and include a recommendati
 In conclusion, model 2 performed better with higher accuracy . For instance, if predicting '1's (high-risk borrowers) is more critical, a model with higher recall for '1's might be preferred. Conversely, if overall accuracy is paramount, the model with the highest balanced accuracy score would be ideal.
 
 If you do not recommend any of the models, please justify your reasoning.
+
+
+The second model we created is a bit more accurate than the first one. 
